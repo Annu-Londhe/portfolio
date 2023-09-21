@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avtar.png" alt="Aniket Londhe" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Aniket Londhe">Aniket Londhe</h1>
+
+          <p class="title">MERN developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:aniketlondhe714@gmail.com" class="contact-link">aniketlondhe714@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:9579185305" class="contact-link">+91 9579185305</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-08-09">August 09, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Mumbai, Maharashtra, INDIA</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/aniket-londhe-17a8b9283" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Annu-Londhe" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://twitter.com" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com" class="social-link">
+              <ion-icon class = "socials-icons" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm Creative Developer  from Maharashtra, India, working in web development .
+            I enjoy
+            turning complex problems into simple, beautiful and intuitive designs.
+          </p>
+
+          <p>
+            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+            Moreover, I
+            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+            across your
+            message and identity in the most creative way.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li> -->
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frontend development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-back.svg" alt="backend icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Backend Developement</h4>
+
+                <p class="service-item-text">
+                  Professional development of complex bussiness logic.
+                </p>
+              </div>
+
+            </li>
+
+            <!-- <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Video Editing</h4>
+
+                <p class="service-item-text">
+                  I edit high-quality video of any category at a professional level.
+                </p>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - Experience
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Allassane Dicko</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    "We engaged Ankit to craft our corporate identity, and we are impressed with the results. His wealth of experience in the field shines through in every aspect of the project. Richard's attention to detail and commitment to understanding our unique needs were truly impressive. We highly recommend his services."
+
+
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            -->
+
+          <!-- </ul>
+
+        </section> -->
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+          <h3 class="h3 clients-title">Tech Stack & Tools</h3>
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-7.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-8.png" alt="client logo">
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-9.png" alt="client logo">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Bharat college of Engineering</h4>
+              <span>2021 — Present</span>
+              <p class="timeline-text">
+                Currently pursuing a Bachelor's degree in Engineering at Bharat college of Engineering with 
+                a notable CGPA of 8.0. Actively engaging in coursework related to engineering 
+                disciplines, and participating in hands-on projects to apply theoretical knowledge.
+              </p>
+            </li>
+            
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">CHM College</h4>
+              <span>2020 — 2021</span>
+              <p class="timeline-text">
+                Completed 12th grade as a PCMB student at CHM College with an impressive score of 91%. 
+                Excelled in Physics, Chemistry,Biology  and Mathematics, showcasing a strong aptitude for scientific subjects.
+              </p>
+            </li>
+            
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Guru Nanak High School</h4>
+              <span>2018 — 2019</span>
+              <p class="timeline-text">
+                Successfully completed 10th grade education at Guru Nanak High School with a commendable score of 87.06%
+                . Engaged in extracurricular activities alongside academics, showcasing a well-rounded approach to education.
+              </p>
+            </li>
+            
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Codsoft(Web Development Intern)</h4>
+
+              <span>March 2023 — May 2023</span>
+
+              <p class="timeline-text">
+                I made 2 projects  that are portfolio,  Calculator (HTML, CSS, JS)<br>
+                While doing the internship I learn more about logic building.
+              </p>
+
+            </li>
+
+            <!-- <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Oasis Infobyte (Graphics Designer Intern)</h4>
+
+              <span>April 2023 — May 2023</span>
+
+              <p class="timeline-text">
+                I complete my Internship as a Graphic designer.
+                I learned advanced designing in Figma.
+                I learned poster and logo designing.
+              </p>
+
+            </li> -->
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Frontend development</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <!-- <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic design</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li> -->
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Backend Developement</h5>
+                <data value="90">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">problem solving</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <!-- <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li> -->
+
+          </ul>
+
+        </section>
+        <!-- <a href="https://drive.google.com/file/d/1ZMhWzlEyGBz6-KIK7kmau7t7k7RxiHdu/view?usp=sharing">
+        <button class="form-btn">
+          <i class="fa fa-file-text-o" style="font-size:25px;color:rgb(254, 206, 104)"></i>
+          <span>Resume Doc</span>
+        </button>
+      </a> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <!-- <li class="filter-item">
+              <button data-filter-btn>React projects</button>
+            </li> -->
+
+            <li class="filter-item">
+              <button data-filter-btn>javascript and react projects</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Full stack project</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>javascript  and react projects</button>
+              </li>
+
+              <!-- <li class="select-item">
+                <button data-select-item>React projects</button>
+              </li> -->
+
+              <li class="select-item">
+                <button data-select-item>full stack project</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="full stack project">
+              <a href="https://studynotionfinal.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="studynotion" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">StudyNotion</h3>
+
+                <p class="project-category">Full stack project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="javascript and react projects">
+              <a href="https://ai-weather-pi.vercel.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.jpg" alt="Weather" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Weather App</h3>
+
+                <p class="project-category">javascript project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="javascript and react projects">
+              <a href="https://aniket-tic-tac-toe-game.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.png" alt="Tic-Tac-Toe" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tic Tac Toe</h3>
+
+                <p class="project-category">javascript project </p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="javascript and react projects">
+              <a href="https://passgenerator111.netlify.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.jpg" alt="to-do-list2" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Password Generator</h3>
+
+                <p class="project-category">javascript project</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="javascript and react projects">
+              <a href="https://jocular-custard-07c94a.netlify.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.jpg" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dev Detective</h3>
+
+                <p class="project-category">javascript projects</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="javascript and react projects">
+              <a href="https://top-courses-aniket.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.jpg" alt="top courses" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Top Courses</h3>
+
+                <p class="project-category">React project</p>
+
+              </a>
+            </li>
+
+
+            <li class="project-item  active" data-filter-item data-category="javascript and react projects">
+              <a href="https://shopping-cart-aniket.netlify.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="shopping cart" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Shopping Cart</h3>
+
+                <p class="project-category">React project</p>
+
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="All">
+              <a href="http://aniket-modern-chair.netlify.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.jpg" alt="modern chair" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Modern Chair</h3>
+
+                <p class="project-category">Modern Chair</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="All">
+              <a href="https://aniket-razorpay-clone.netlify.app">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-10.jpg" alt="Razorpay clone" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Razorpay Clone</h3>
+
+                <p class="project-category">Razorpay Clone</p>
+
+              </a>
+            </li>
+
+
+
+
+
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <!-- <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+        <section class="blog-posts">
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="https://medium.com/@ankitjaat24u/tips-for-finding-paid-internship-as-a-fresher-9fb6b9f2a205">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.png" alt="Tip for Internship" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Internship</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">Mar 06, 2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Tips for Finding Paid Internship</h3>
+                  <p class="blog-text">
+                    Finding an internship can be an exciting yet challenging task.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+ -->
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="./assets/images/picture-1.png"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+        
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="mailto:aniketkiran03@gmail.com"  >
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+             <input type="submit"   style="color: aliceblue;padding-bottom:10px ; padding-top: 2px;
+             border-color:antiquewhite" value="Send mesasage"/>
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+  <!--
+    - custom js link
+  -->
+  <script src="assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
